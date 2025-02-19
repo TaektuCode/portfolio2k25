@@ -1,0 +1,13 @@
+.aboutme-section {
+  display: flex;
+  gap: 2rem;
+  height: fit-content;
+  margin: 3rem 15rem;
+}
+
+.banner-box,
+.aboutme-box {
+  background-color: grey;
+  flex: 1;
+  height: 100%;
+}
