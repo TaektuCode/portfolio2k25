@@ -1,7 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
+$white: #f8f9fa;
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("./assets/fonts/BricolageGrotesque-VariableFont.ttf");
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("./assets/fonts/Kalam-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
