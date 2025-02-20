@@ -1,0 +1,23 @@
+.footer {
+  width: 70%;
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15%;
+  color: white;
+  background-color: transparent;
+  .logo-box {
+    border: 1px solid white;
+  }
+  .link-box {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: white;
+    }
+  }
+}
