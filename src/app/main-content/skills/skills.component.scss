@@ -1,0 +1,43 @@
+.skills-section {
+  background-image: url("/assets/graphics/skills/skills_bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-container {
+  border: 1px solid white;
+  width: 70%;
+  .skills-box1 {
+    display: flex;
+    background-color: bisque;
+    align-items: flex-end;
+    justify-content: space-between;
+    p {
+      width: 200px;
+    }
+    article {
+      flex: 1;
+    }
+  }
+  .skills-box2 {
+    display: flex;
+    background-color: bisque;
+    justify-content: end;
+    height: 200px;
+    .logo-box {
+      flex: 3;
+      text-align: center;
+      border: 1px solid black;
+    }
+    .image-box {
+      flex: 1;
+    }
+  }
+}
