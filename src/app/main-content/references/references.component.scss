@@ -1,0 +1,22 @@
+.references-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.references-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.references-box {
+  border: 1px solid black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}

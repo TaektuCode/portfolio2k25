@@ -1,0 +1,40 @@
+.contact-section {
+  background-image: url("/assets/graphics/hero/hero_bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(-1, -1); /* Flips background and content */
+}
+
+.contact-box {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 450px;
+  transform: scale(-1, -1);
+  article {
+    border: 1px solid white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+  }
+  form {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    flex: 1;
+  }
+}
