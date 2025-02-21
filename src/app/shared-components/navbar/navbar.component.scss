@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 }
-.navbar-content {
+nav {
   width: 1440px;
   height: 80px;
   position: fixed;
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .logo-box {
+  .navbar_logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
       }
     }
   }
-  .alink-box {
+  .navbar_links {
     display: flex;
     align-items: center;
     height: 100%;
@@ -44,11 +44,44 @@
     flex: 1;
     justify-content: space-around;
     a {
-      font-size: 18px;
+      position: relative;
+      color: #fff;
       font-weight: 800;
+      font-size: 18px;
+      transition: color 225ms ease-in-out;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 125ms ease-in-out;
+        clip-path: inset(100% 0 0 0);
+      }
+
+      &:hover::after {
+        opacity: 1;
+        animation: drawEffect;
+        transform: translateX(-50%) translateY(-40px);
+      }
+    }
+    // Individual animations for each link
+    a:nth-child(1)::after {
+      background-image: url("/assets/toggle/B.1.png");
+      width: 118px;
+      height: 45px;
+    }
+
+    a:nth-child(1):hover::after {
+      animation: drawTopToBottom 250ms ease-in-out forwards;
     }
   }
-  .language-box {
+
+  .navbar_translate {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,5 +89,23 @@
     color: white;
     height: 100%;
     width: 10%;
+  }
+}
+// Keyframes for drawing animation
+@keyframes drawTopToBottom {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes drawLeftToRight {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
   }
 }
