@@ -1,16 +1,20 @@
-<div id="skills" class="skills-section">
-  <div class="skills-container">
-    <div class="skills-box1">
-      <p>Skill Set</p>
-      <article>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem?
-        Totam soluta modi odio a at dolore vitae assumenda hic officia quaerat
-        aliquid, quibusdam quas illo illum nam nostrum! Saepe?
-      </article>
+<section id="skills">
+  <div class="section_box1">
+    <div class="section_headline">
+      <span>MY STACK</span>
+      <h1>Skill set</h1>
     </div>
-    <div class="skills-box2">
-      <div class="logo-box">Placeholder</div>
-      <div class="image-box">asfasfasf</div>
+    <div>
+      <img class="text" src="./assets/graphics/skills/skill.svg" alt="skill" />
     </div>
   </div>
-</div>
+
+  <div class="skills_content">
+    @for(skill of skills; track $index){
+    <div class="skill_wrapper">
+      <img src="{{ skill.icon }}" alt="{{ skill.name }}" />
+      <span>{{ skill.name }}</span>
+    </div>
+    }
+  </div>
+</section>
