@@ -4,11 +4,19 @@
   width: 100%;
   height: 80px;
   position: fixed;
-  z-index: 1;
+  z-index: 15;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  &.scrolled {
+    background-color: black;
+    opacity: 0.8;
+  }
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 nav {
   width: 1440px;
@@ -91,7 +99,7 @@ nav {
     a:nth-child(3)::after {
       background-image: url("/assets/toggle/B.3.png");
       width: 105px;
-      height: 45px;
+      height: 40px;
     }
     a:nth-child(3):hover::after {
       animation: drawLeftToRight 250ms ease-in-out forwards;

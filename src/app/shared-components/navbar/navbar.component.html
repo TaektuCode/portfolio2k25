@@ -1,4 +1,7 @@
-<div class="navbar">
+<div
+  class="navbar"
+  [ngClass]="{ scrolled: isScrolling, hidden: !isVisible && isScrolling }"
+>
   <nav>
     <div class="navbar_logo">
       <svg
