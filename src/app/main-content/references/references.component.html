@@ -1,6 +1,27 @@
-<div class="references-section">
-  <div class="references-header">
-    <h2>Placeholder</h2>
+<section class="reference_section">
+  <div class="reference_headline">
+    <p>IN THEIR WORDS:</p>
+    <h1>Colleagues' Thoughts</h1>
   </div>
-  <div class="references-box">Placeholder</div>
-</div>
+
+  <div class="card-container">
+    @for(card of cards; track $index){
+    <div
+      class="card"
+      [ngStyle]="{ 'background-image': 'url(' + card.image + ')' }"
+    >
+      <p>{{ card.text }}</p>
+      <div class="card_content">
+        <div>
+          <strong>{{ card.name }}</strong
+          ><br />
+          <span>{{ card.job }}</span>
+        </div>
+        <a href="{{ card.linkedIn }}"
+          ><img src="./assets/icons/linkedIn.svg" alt="" />Profile</a
+        >
+      </div>
+    </div>
+    }
+  </div>
+</section>
