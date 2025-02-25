@@ -1,4 +1,5 @@
 .footer {
+  height: 132px;
   width: 70%;
   position: absolute;
   bottom: 0px;
@@ -9,10 +10,14 @@
   margin: 0 15%;
   color: white;
   background-color: transparent;
-  .logo-box {
+  .logo_box {
     border: 1px solid white;
+    height: 100%;
+    img {
+      height: 50px;
+    }
   }
-  .link-box {
+  .link_box {
     border: 1px solid white;
     display: flex;
     justify-content: space-between;
