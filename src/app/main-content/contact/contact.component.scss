@@ -1,6 +1,10 @@
 #background_container {
   background-image: url("/assets/graphics/hero/hero_bg.png");
   transform: scale(-1, -1); /* Flips background and content */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  width: 100%;
 }
 
 #contact_section {
