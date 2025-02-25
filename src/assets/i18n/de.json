@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "about-me": "Über Mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "hello": "Hallo Welt",
+    "contact": "Jetzt kontaktieren",
+    "me": "Ich bin Alex Russotto"
+  },
+  "projects": {
+    "headline": "Meine Leidenschaft",
+    "title": "Projekte",
+    "text": "In meinen Projekten lege ich großen Wert darauf, benutzerfreundliche und responsive Lösungen zu schaffen, die sowohl funktional als auch ästhetisch ansprechend sind. Jedes Projekt basiert auf effizientem und sauberem Code, um die Performance zu optimieren und eine reibungslose Nutzererfahrung zu gewährleisten. Werfen Sie einen Blick auf einige meiner Arbeiten und lassen Sie sich von der Qualität und Kreativität überzeugen.",
+    "join": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
+    "game": "Ein actionreiches Jump-'n'-Run-Spiel mit Schlagen und Werfen, basierend auf einem objektorientierten Ansatz.",
+    "pokedex": "Eine interaktive Pokédex-Web-App, die Pokémon-Daten über eine API abruft, damit Nutzer Pokémon-Details einfach durchsuchen und erkunden können."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "about-me": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hello World",
+    "contact": "Get in Touch",
+    "me": "I'm Alex Russotto"
+  },
+  "projects": {
+    "headline": "MY CRAFT",
+    "title": " Projects",
+    "text": "In my projects, I focus on creating user-friendly and responsive solutions that are both functional and visually appealing. Each project is built on efficient and clean code to optimize performance and ensure a seamless user experience. Take a look at some of my work and see for yourself the quality and creativity I bring to every project.",
+    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "game": "An action-packed jump, run, slash, and throw game with an object-oriented approach",
+    "pokedex": "An interactive Pokédex web app that fetches Pokémon data via an API, allowing users to search and explore Pokémon details easily."
+  }
+}

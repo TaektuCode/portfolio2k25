@@ -1,1 +1,82 @@
-<p id="projects">projects works!</p>
+<section id="projects">
+  <div class="projects-intro" (mouseover)="showImage()">
+    <p class="projects-headline">{{ "projects.headline" | translate }}</p>
+    <h2 class="projects-title">{{ "projects.title" | translate }}</h2>
+    <div class="projects-animation">
+      @if(isAnimated && isHovered) {
+      <img
+        class="animation-line"
+        src="./assets/toggle/projectline.svg"
+        alt="highlight-line"
+      />
+      } @else {
+      <img
+        class="animation-line"
+        src="./assets/toggle/projectlineD.svg"
+        alt="highlight-line-default"
+      />
+      }
+    </div>
+    <br />
+    <span class="projects-description">{{ "projects.text" | translate }}</span>
+  </div>
+
+  <div class="project-card" (mouseover)="onMouseOver('game')">
+    <a [routerLink]="['/join']" class="project-link">
+      <img
+        src="./assets/graphics/projects/laptop.png"
+        alt="Join"
+        class="project-image"
+      />
+      <span
+        class="project-overlay"
+        [class.show]="activeProject === 'game'"
+      ></span>
+      <button class="project-button" [class.show]="activeProject === 'game'">
+        Project Details
+      </button>
+    </a>
+    <h3 class="project-title">Join</h3>
+    <p class="project-description">{{ "projects.join" | translate }}</p>
+  </div>
+</section>
+
+<section id="projects-container">
+  <div class="project-card" (mouseover)="onMouseOver('game')">
+    <a [routerLink]="['/game']" class="project-link">
+      <img
+        src="./assets/graphics/projects/pollo_loco.png"
+        alt="Pollo Loco Game"
+        class="project-image"
+      />
+      <span
+        class="project-overlay"
+        [class.show]="activeProject === 'game'"
+      ></span>
+      <button class="project-button" [class.show]="activeProject === 'game'">
+        Project Details
+      </button>
+    </a>
+    <h3 class="project-title">Game</h3>
+    <p class="project-description">{{ "projects.game" | translate }}</p>
+  </div>
+
+  <div class="project-card" (mouseover)="onMouseOver('pokedex')">
+    <a [routerLink]="['/pokedex']" class="project-link">
+      <img
+        src="./assets/graphics/projects/pokedex.png"
+        alt="Pokedex"
+        class="project-image"
+      />
+      <span
+        class="project-overlay"
+        [class.show]="activeProject === 'pokedex'"
+      ></span>
+      <button class="project-button" [class.show]="activeProject === 'pokedex'">
+        Project Details
+      </button>
+    </a>
+    <h3 class="project-title">Pokédex</h3>
+    <p class="project-description">{{ "projects.pokedex" | translate }}</p>
+  </div>
+</section>
