@@ -1,40 +1,75 @@
-.contact-section {
+#background_container {
   background-image: url("/assets/graphics/hero/hero_bg.png");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: scale(-1, -1); /* Flips background and content */
 }
 
-.contact-box {
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 450px;
+#contact_section {
+  height: 100dvh;
+  width: 100%;
+  max-width: 1440px;
+  padding: 120px 72px 0 72px;
   transform: scale(-1, -1);
-  article {
-    border: 1px solid white;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 100%;
+}
+
+.article_box {
+  display: flex;
+  align-items: end;
+  max-width: 1440px;
+  width: 100%;
+  > div {
+    width: 50%;
+    flex-direction: column;
+    p {
+      color: #fff;
+      padding-bottom: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: left;
+      align-self: flex-start;
+    }
+    h2 {
+      color: #fff;
+      font-size: 64px;
+      font-weight: 700;
+      padding-bottom: 45px;
+    }
+    article {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
-  form {
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: white;
-    flex: 1;
+}
+
+.line_graphic {
+  width: 300px;
+  height: 45px;
+  padding-top: 60px;
+  .hover_graphic {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    animation: drawLeftToRight 4s ease-in-out forwards;
+  }
+}
+
+@keyframes drawLeftToRight {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+
+  10% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+
+  90% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+
+  100% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
   }
 }

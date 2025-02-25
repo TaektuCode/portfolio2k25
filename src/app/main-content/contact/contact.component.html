@@ -1,6 +1,36 @@
-<div id="contact" class="contact-section">
-  <div class="contact-box">
-    <article>Placeholder</article>
-    <form action="">Placeholder</form>
-  </div>
+<div id="background_container">
+  <section id="contact_section">
+    <div class="article_box" (mouseover)="showGraphic()">
+      <div>
+        <p>CONTACT ME</p>
+        <h2>Ready to work together</h2>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi in nemo
+          possimus dignissimos aspernatur laudantium expedita officiis
+          voluptatum assumenda, accusantium, molestias harum quidem, animi ab?
+          Qui, omnis. Deleniti, odit aperiam. <br /><br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum
+          dolorem nihil assumenda dolore
+          <br /><br />
+          Placeholder
+        </article>
+
+        <div class="line_graphic">
+          @if(isAnimated && isHovered){
+          <img
+            class="hover_graphic"
+            src="./assets/toggle/line.svg"
+            alt="yellow-line"
+          />
+          }@else{
+          <img
+            class="hover_graphic"
+            src="./assets/toggle/line-e.svg"
+            alt="default-line"
+          />
+          }
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
