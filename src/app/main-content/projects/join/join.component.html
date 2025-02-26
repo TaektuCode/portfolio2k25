@@ -1,1 +1,92 @@
-<p>join works!</p>
+<section class="fontBricolageG">
+  <div>
+    <div class="back-btn">
+      <img src="./assets/icons/Back.svg" alt="Back" /><a href="#">{{
+        "join.back" | translate
+      }}</a>
+    </div>
+
+    <div class="container" (mouseover)="showImage()">
+      <div class="content-left">
+        <h1>Join</h1>
+        <div class="blueline_content">
+          @if(showAnimation && isHovered){
+          <img
+            class="hover-image"
+            src="./assets/toggle/join_line.svg"
+            alt="Blueline"
+          />
+          }@else{
+          <img
+            class="hover-image"
+            src="./assets/toggle/default_join_line.png"
+            alt="Blueline"
+          />
+          }
+        </div>
+
+        <h3>{{ "join.headline" | translate }}</h3>
+        <br />
+        <span>{{ "join.description" | translate }}</span>
+        <br />
+        <br />
+        <h3>{{ "join.subline" | translate }}</h3>
+        <br />
+        <span>{{ "join.details" | translate }}</span>
+        <br /><br />
+        <p>{{ "join.weeks" | translate }}</p>
+        <div class="icon_content">
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/CSS.svg"
+              alt="CSS"
+            />CSS</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/HTML.svg"
+              alt="HTML"
+            />HTML</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/Firebase.svg"
+              alt="Firebase"
+            />Firebase</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/Angular.svg"
+              alt="Angular"
+            />Angular</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/Ts.svg"
+              alt="TypeScript"
+            />TypeScript</span
+          >
+        </div>
+      </div>
+
+      <div class="content-right">
+        <img src="./assets/img/join.png" alt="join-Project" />
+        <div class="btn-content">
+          <button>GitHub</button>
+          <button>Live Test</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="next-btn">
+      <a [routerLink]="['/game']">{{ "join.next" | translate }}</a
+      ><img src="./assets/icons/next.svg" alt="next" />
+    </div>
+  </div>
+  <div id="background"></div>
+</section>

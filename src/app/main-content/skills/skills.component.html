@@ -1,20 +1,69 @@
-<section id="skills">
-  <div class="section_box1">
-    <div class="section_headline">
-      <span>MY STACK</span>
-      <h1>Skill set</h1>
+<section id="skills" class="fontBricolageG" (mouseover)="showGraphic()">
+  <div class="content">
+    <div class="headline-container">
+      <div class="headline">
+        <p>{{ "skills.headline" | translate }}</p>
+        <h2>{{ "skills.title" | translate }}</h2>
+      </div>
+      <div class="paper-content">
+        <p class="my-text">"{{ "skills.text" | translate }}"</p>
+      </div>
     </div>
-    <div>
-      <img class="text" src="./assets/graphics/skills/skill.svg" alt="skill" />
-    </div>
-  </div>
 
-  <div class="skills_content">
-    @for(skill of skills; track $index){
-    <div class="skill_wrapper">
-      <img src="{{ skill.icon }}" alt="{{ skill.name }}" />
-      <span>{{ skill.name }}</span>
+    <div class="sub-content">
+      <div class="blueline_content">
+        @if(isAnimated && isHovered){
+        <img
+          class="hover-image"
+          src="./assets/toggle/skillsline.svg"
+          alt="Blueline"
+        />
+        }@else{
+        <img
+          class="hover-image"
+          src="./assets/toggle/skillslineD.svg"
+          alt="Blueline"
+        />
+        }
+      </div>
+      <div class="skills_content">
+        @for(skill of skills; track $index){
+        <div>
+          <img src="{{ skill.icon }}" alt="{{ skill.name }}" />
+          <p>{{ skill.name }}</p>
+        </div>
+        }
+      </div>
+      <div class="sticker" (click)="toggleImage()">
+        <ng-container *ngIf="isClicked; else defaultTemplate">
+          <img
+            src="{{ 'skills.sticker-hover' | translate }}"
+            alt="Sticker"
+            class="hover-image"
+          />
+        </ng-container>
+        <ng-template #defaultTemplate>
+          <img
+            src="{{ 'skills.sticker-default' | translate }}"
+            alt="Sticker"
+            class="default-image"
+          />
+        </ng-template>
+
+        <img
+          src="{{ 'skills.sticker-hover' | translate }}"
+          alt="Sticker"
+          class="hover-image"
+        />
+
+        <img
+          src="./assets/toggle/sticker2.svg"
+          alt="Sticker"
+          class="sticker2-image"
+          [ngClass]="{ 'animate-diagonal': isClicked }"
+          [style.opacity]="isClicked ? '1' : '0'"
+        />
+      </div>
     </div>
-    }
   </div>
 </section>

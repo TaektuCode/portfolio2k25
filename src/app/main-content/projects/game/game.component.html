@@ -1,1 +1,85 @@
-<p>game works!</p>
+<section class="fontBricolageG">
+  <div>
+    <app-header [ngClass]="{ 'project-page': isProjectPage }"></app-header>
+    <div class="back-btn">
+      <img src="./assets/icons/back_btn.svg" alt="Back" /><a href="#">{{
+        "join.back" | translate
+      }}</a>
+    </div>
+
+    <div class="container" (mouseover)="showImage()">
+      <div class="content-left">
+        <h1>El Pollo Loco Game</h1>
+        <div class="blueline_content">
+          @if(showAnimation && isHovered){
+          <img
+            class="hover-image"
+            src="./assets/toggle/blueline.svg"
+            alt="Blueline"
+          />
+          }@else{
+          <img
+            class="hover-image"
+            src="./assets/toggle/blueline_Default.svg"
+            alt="Blueline"
+          />
+          }
+        </div>
+
+        <h3>{{ "game.headline" | translate }}</h3>
+        <br />
+        <span>{{ "game.description" | translate }}</span>
+        <br />
+        <h3>{{ "game.subline" | translate }}</h3>
+        <br />
+        <span>{{ "game.details" | translate }}</span>
+        <br />
+        <p>{{ "game.weeks" | translate }}</p>
+        <div class="icon_content">
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/Js.svg"
+              alt="JavaScript"
+            />JavaScript</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/HTML.svg"
+              alt="HTML"
+            />HTML</span
+          >
+          <span
+            ><img
+              class="icon"
+              src="./assets/icons/CSS.svg"
+              alt="CSS"
+            />CSS</span
+          >
+        </div>
+      </div>
+
+      <div class="content-right">
+        <img src="./assets/img/project_zombie.png" alt="zombie-Project" />
+        <div class="btn-content">
+          <a
+            href="https://github.com/Caryensong/LastHumanStanding"
+            target="_blank"
+            ><button>GitHub</button></a
+          >
+          <a
+            href="https://caryen-song.developerakademie.net/LastHumanStanding/index.html"
+            ><button>Live Test</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="next-btn">
+      <a [routerLink]="['/pokedex']">{{ "join.next" | translate }}</a
+      ><img src="./assets/icons/next.svg" alt="next" />
+    </div>
+  </div>
+  <div id="background"></div>
+</section>

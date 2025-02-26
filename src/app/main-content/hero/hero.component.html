@@ -1,66 +1,74 @@
-<section class="hero-section">
-  <div class="hero-container">
-    <div>
-      <div class="content">
-        <div class="headline">
-          <div class="top_title">
-            <button
-              [ngClass]="{ hovered: isHovered }"
-              (mouseover)="changeButtonState(true)"
-              (mouseout)="changeButtonState(false)"
-            >
-              {{ isHovered ? "I'M ALEX RUSSOTTO" : "Hello World" }}
-              <div class="hand-image"></div>
-            </button>
+<div id="background">
+  <section>
+    <div class="main-container">
+      <div>
+        <div class="content">
+          <div class="headline">
+            <div class="top_title">
+              <button
+                [ngClass]="{ hovered: isHovered }"
+                (mouseover)="changeButtonState(true)"
+                (mouseout)="changeButtonState(false)"
+              >
+                {{
+                  isHovered
+                    ? ("hero.me" | translate)
+                    : ("hero.hello" | translate)
+                }}
+                <div class="hand-image"></div>
+              </button>
 
-            <div>
-              <span>F</span>
-              <span>r</span>
-              <span>o</span>
-              <span>n</span>
-              <span>t</span>
-              <span>e</span>
-              <span>n</span>
-              <span>d</span>
+              <div>
+                <span>F</span>
+                <span>r</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+              </div>
             </div>
+            <img
+              class="my_pic"
+              [src]="imageSrc"
+              (mouseover)="changeImage(true)"
+              (mouseout)="changeImage(false)"
+              alt="ME"
+            />
           </div>
-          <img
-            class="my_picture"
-            [src]="imageSrc"
-            (mouseover)="changeImage(true)"
-            (mouseout)="changeImage(false)"
-            alt="Picture of myself"
-          />
-        </div>
 
-        <div class="subline">
-          <div class="sub_titletext">
-            <span>D</span>
-            <span>E</span>
-            <span>V</span>
-            <span>E</span>
-            <span>L</span>
-            <span>O</span>
-            <span>P</span>
-            <span>E</span>
-            <span>R</span>
+          <div class="subline">
+            <div class="sub_title">
+              <span>D</span>
+              <span>E</span>
+              <span>V</span>
+              <span>E</span>
+              <span>L</span>
+              <span>O</span>
+              <span>P</span>
+              <span>E</span>
+              <span>R</span>
+            </div>
+            <a href="#contact">
+              <button class="contact_btn">
+                {{ "hero.contact" | translate }}
+              </button></a
+            >
           </div>
-          <a href="#contact">
-            <button class="contact_btn">Get in Touch</button></a
-          >
         </div>
       </div>
-    </div>
 
-    <div class="link_content">
-      @for(link of links; track $index){
-      <div class="image-wrapper">
-        <a href="{{ link.http }}" target="_blank"
-          ><img src="{{ link.image }}" alt="{{ link.name }}"
-        /></a>
-        <div class="overlay"></div>
+      <div class="link_content">
+        @for(link of links; track $index){
+        <div class="image-wrapper">
+          <a href="{{ link.http }}" target="_blank"
+            ><img src="{{ link.image }}" alt="{{ link.name }}"
+          /></a>
+          <div class="overlay"></div>
+        </div>
+        }
       </div>
-      }
     </div>
-  </div>
-</section>
+  </section>
+</div>

@@ -1,33 +1,40 @@
-<section id="aboutMe">
-  <div><img src="./assets/graphics/aboutMe/location.svg" alt="Location" /></div>
-  <div (mouseover)="showLine()">
-    <p>WHO'S ALEX ?</p>
+<section id="about-me">
+  <div class="about-me__icon">
+    <img src="./assets/graphics/aboutMe/location.svg" alt="Location" />
+  </div>
 
-    <h1>About me</h1>
-    <div class="animation_box">
+  <div class="about-me__content" (mouseover)="showLine()">
+    <p class="about-me__subtitle">{{ "about-me.who" | translate }}</p>
+
+    <h2 class="about-me__title">{{ "about-me.about" | translate }}</h2>
+
+    <div class="about-me__animation-box">
       @if(isAnimated && isHovered){
       <img
-        class="image_hover"
+        class="about-me__animated-line"
         src="./assets/toggle/blueline.svg"
         alt="Blueline"
       />
       }@else{
       <img
-        class="image_hover"
+        class="about-me__animated-line"
         src="./assets/toggle/blueline_Default.svg"
         alt="Blueline"
       />
       }
     </div>
-    <article>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cumque
-      veritatis! Necessitatibus, esse. Vel accusantium enim veritatis, harum
-      fugiat eius eum sunt aperiam repellendus aspernatur maiores quis,
-      quibusdam dolores esse.
+
+    <article class="about-me__description">
+      {{ "about-me.article" | translate }}
+      <br /><br />
+      {{ "about-me.sub_article" | translate }}
     </article>
-    <div class="button_container">
+
+    <div class="about-me__button-container">
       <a href="#contact">
-        <button>Let'talk</button>
+        <button class="about-me__contact-button">
+          {{ "about-me.btn" | translate }}
+        </button>
       </a>
     </div>
   </div>

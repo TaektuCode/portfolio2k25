@@ -10,20 +10,57 @@
     "contact": "Jetzt kontaktieren",
     "me": "Ich bin Alex Russotto"
   },
+  "about-me": {
+    "about": "Über Mich",
+    "who": "WER IST ALEX?",
+    "article": "Hallo! Ich bin Alex, ein Frontend-Entwickler mit einer Leidenschaft für nahtlose und ansprechende digitale Erlebnisse. Mit einem ausgeprägten Gespür für Problemlösungen und einem Auge für Details verwandle ich komplexe Konzepte in visuell ansprechende und funktionale Webanwendungen.",
+    "sub_article": "Lass uns gemeinsam etwas Außergewöhnliches erschaffen!",
+    "btn": "Lass quatschen!"
+  },
+  "skills": {
+    "headline": "Fähigkeiten",
+    "title": " Skill set",
+    "sticker-default": "./assets/graphics/skills/sticker-default-DE.svg",
+    "sticker-hover": "./assets/graphics/skills/sticker-hover-DE.svg",
+    "text": "Ich habe umfassende Erfahrung in der Entwicklung von Projekten mit unterschiedlichen Frontend-Technologien und Konzepten. Mit meiner Neugier und Offenheit für Neues erweitere ich kontinuierlich mein Wissen, um meine Fähigkeiten gezielt auszubauen."
+  },
   "projects": {
     "headline": "Meine Leidenschaft",
     "title": "Projekte",
-    "text": "In meinen Projekten lege ich großen Wert darauf, benutzerfreundliche und responsive Lösungen zu schaffen, die sowohl funktional als auch ästhetisch ansprechend sind. Jedes Projekt basiert auf effizientem und sauberem Code, um die Performance zu optimieren und eine reibungslose Nutzererfahrung zu gewährleisten. Werfen Sie einen Blick auf einige meiner Arbeiten und lassen Sie sich von der Qualität und Kreativität überzeugen.",
-    "join": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
-    "game": "Ein actionreiches Jump-'n'-Run-Spiel mit Schlagen und Werfen, basierend auf einem objektorientierten Ansatz.",
-    "pokedex": "Eine interaktive Pokédex-Web-App, die Pokémon-Daten über eine API abruft, damit Nutzer Pokémon-Details einfach durchsuchen und erkunden können."
+    "text": "Bei meiner Arbeit lege ich großen Wert auf die Entwicklung intuitiver und responsiver Lösungen, die Funktionalität und Ästhetik perfekt vereinen. Jedes Projekt basiert auf sauberem, effizientem Code, um die Leistung zu optimieren und ein nahtloses Nutzererlebnis zu gewährleisten. Schau dir meine Projekte an und überzeuge dich selbst von der Qualität und Kreativität, die ich in jedes einzelne stecke.",
+    "join": "Ein Task-Manager, inspiriert vom Kanban-System. Erstelle, organisiere und weise Aufgaben mit einer intuitiven Drag-and-Drop-Funktion zu.",
+    "game": "Ein actiongeladenes Abenteuer, bei dem du springen, rennen, schlagen und werfen kannst – entwickelt mit objektorientierter Programmierung.",
+    "pokedex": "Eine interaktive Pokédex-Web-App, die Pokémon-Daten über eine API abruft und eine einfache Suche sowie detaillierte Erkundung ermöglicht."
+  },
+  "join": {
+    "description": "Ein Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+    "details": "Kurze Beschreibung deiner Rolle oder des Workflows für dieses spezifische Projekt. Zeige einem Recruiter deine Kenntnisse und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+    "weeks": "Dauer: 5 Wochen",
+    "headline": "Beschreibung",
+    "subline": "Implementierungsdetails",
+    "back": "Zurück",
+    "next": "Nächstes Projekt"
+  },
+  "game": {
+    "description": "Pollo Loco game",
+    "details": "Pollo Loco Game",
+    "weeks": "Dauer: 3 Wochen",
+    "headline": "Beschreibung",
+    "subline": "Implementierungsdetails"
+  },
+  "pokedex": {
+    "description": "Eine interaktive Pokédex-Webanwendung, die es Nutzern ermöglicht, Pokémon aus dem offiziellen Register zu finden und detaillierte Informationen abzurufen. Mithilfe einer API werden die Attribute der Pokémon dynamisch geladen und angezeigt. Eine intuitive Suchfunktion erlaubt es, Pokémon anhand der Anfangsbuchstaben zu filtern. Das Design ist benutzerfreundlich und für verschiedene Geräte optimiert, um ein nahtloses Nutzungserlebnis zu gewährleisten.",
+    "details": "Das Projekt wurde mit JavaScript und der Fetch API entwickelt, um Pokémon-Daten in Echtzeit aus einer externen Schnittstelle abzurufen. Asynchrone Funktionen sorgen für eine flüssige Datenverarbeitung. Die Suchfunktion nutzt String-Methoden, um Pokémon-Namen effizient zu filtern. Besondere Aufmerksamkeit wurde auf eine strukturierte Code-Architektur, ein responsives Design für verschiedene Bildschirmgrößen und eine optimierte API-Nutzung für schnelle Ladezeiten gelegt.",
+    "weeks": "Dauer: 1 Woche",
+    "headline": "Beschreibung",
+    "subline": "Implementierungsdetails"
   },
   "contactFrom": {
     "headline": "KONTAKTIERE MICH",
     "title": "Lass uns gemeinsam etwas schaffen!",
-    "text": "Ich freue mich darauf, von dir zu hören! Wenn du auf der Suche nach einer engagierten und leidenschaftlichen Frontend-Entwicklerin bist, die mit Expertise und Begeisterung einen echten Mehrwert für dein Team schaffen kann, dann lass uns unbedingt ins Gespräch kommen. Ich bin stets darauf bedacht, meine Fähigkeiten weiterzuentwickeln und innovative Lösungen zu liefern, die nicht nur die Anforderungen erfüllen, sondern die Nutzererfahrung auf das nächste Level heben. Ob für neue Projekte oder die Weiterentwicklung bestehender Ideen ich bin bereit, mich mit vollem Einsatz einzubringen und meine Kenntnisse für den Erfolg deines Teams einzusetzen.",
-    "text2": "Ich bin stets bestrebt, meine Fähigkeiten weiterzuentwickeln und innovative Lösungen zu liefern, die das Nutzererlebnis verbessern. Ob bei neuen Projekten oder der Weiterentwicklung bestehender Ideen – ich bin bereit, zum Erfolg deines Teams beizutragen.",
-    "subline": "Lass uns zusammenarbeiten und etwas Großartiges schaffen! Ich freue mich darauf, dir mehr über meine Erfahrungen und Fähigkeiten zu zeigen, um zu sehen, wie ich dein Team unterstützen kann.",
+    "text1": "Ich freue mich darauf, von dir zu hören! Wenn du einen engagierten und leidenschaftlichen Frontend-Entwickler suchst, der mit Fachwissen und Begeisterung überzeugt, dann lass uns in Kontakt treten.",
+    "text2": "Ich arbeite kontinuierlich daran, meine Fähigkeiten zu verbessern und innovative Lösungen zu entwickeln, die das Benutzererlebnis optimieren. Egal, ob für neue oder bestehende Projekte – ich bin bereit, zum Erfolg deines Teams beizutragen.",
+    "text3": "Lass uns gemeinsam etwas Großartiges erschaffen! Ich freue mich darauf, meine Erfahrung und Fähigkeiten zu teilen und zu zeigen, wie ich dein Team bereichern kann.",
     "name": "Wie heißt du?",
     "email": "Wie lautet deine E-Mail?",
     "help": "Wie kann ich dir helfen?",
@@ -33,7 +70,7 @@
     "policy": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten wie darin beschrieben zu",
     "send": "Senden",
     "name-f": "Oops! Es scheint, als fehlt dein Name.",
-    "email-f": "Hoppla! Dein E-mail Adresse wird benötigt",
+    "email-f": "Achtung! Dein E-mail Adresse wird benötigt",
     "help-f": "Was möchtest du entwickeln?"
   }
 }
