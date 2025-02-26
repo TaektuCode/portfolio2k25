@@ -114,17 +114,64 @@ nav {
       animation: drawLeftToRight 250ms ease-in-out forwards;
     }
   }
+}
 
-  .navbar_translate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    color: white;
-    height: 100%;
-    width: 10%;
+.navbar_translate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: white;
+  height: 100%;
+  width: 10%;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Bricolage Grotesque";
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -50px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      clip-path: inset(100% 0 0 0);
+      width: 32px;
+      height: 32px;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      animation: drawTopToBottom 0.5s ease-in-out forwards;
+      transform: translateX(-50%) translateY(-45px);
+    }
+  }
+  .active-language {
+    color: #f39c12;
+    font-weight: bold;
+
+    &::after {
+      opacity: 1;
+      background-image: url("/assets/toggle/toggle1.png");
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  a:nth-child(1)::after,
+  a:nth-child(2)::after {
+    background-image: url("/assets/toggle/toggle1.png");
   }
 }
+
 // Keyframes for drawing animation
 @keyframes drawTopToBottom {
   0% {

@@ -167,8 +167,18 @@
       <a href="#contact">{{ "navbar.contact" | translate }}</a>
     </div>
     <div class="navbar_translate">
-      <a href="#">DEU</a>
-      <a href="#">ENG</a>
+      <a
+        (click)="changeLanguage('en')"
+        href="#"
+        [ngClass]="{ 'active-language': currentLanguage === 'en' }"
+        >EN</a
+      >
+      <a
+        (click)="changeLanguage('de')"
+        href="#"
+        [ngClass]="{ 'active-language': currentLanguage === 'de' }"
+        >DE</a
+      >
     </div>
   </nav>
 </div>
